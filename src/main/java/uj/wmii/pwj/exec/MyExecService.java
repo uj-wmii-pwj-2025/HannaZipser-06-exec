@@ -9,7 +9,6 @@ import java.util.concurrent.*;
 
 public class MyExecService implements ExecutorService {
     private final BlockingQueue<Runnable> taskQueue;
-
     private final Thread processingThread;
     private boolean isShutdown = false;
     private boolean isTerminated = false;
